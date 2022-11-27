@@ -305,7 +305,7 @@ export const NETWORKS = {
     rpcUrl: `https://rpc2.scaffoldeth.io:48544`,
     blockExplorer: "https://etherscan.io/",
   },
-  optimism: {
+  /* optimism: {
     name: "optimism",
     color: "#f01a37",
     price: "uniswap",
@@ -346,7 +346,7 @@ export const NETWORKS = {
     rpcUrl: "https://polygon-mainnet.g.alchemy.com/v2/7ls4W5wc3Cu-4-Zq2QaQxgUhJKjUIDay",
     faucet: "https://faucet.matic.network/",
     blockExplorer: "https://polygonscan.com/",
-  },
+  }, */
   goerli: {
     name: "goerli",
     color: "#0975F6",
@@ -356,7 +356,7 @@ export const NETWORKS = {
     blockExplorer: "https://goerli.etherscan.io/",
     rpcUrl: `https://goerli.infura.io/v3/${INFURA_ID}`,
   },
-  localhost: {
+  /* localhost: {
     name: "localhost",
     color: "#666666",
     price: "uniswap", // use mainnet eth price for localhost
@@ -399,5 +399,5 @@ export const NETWORKS = {
     rpcUrl: `https://api.harmony.one`,
     gasPrice: 1000000000,
     token: "ONE",
-  },
+  }, */
 };

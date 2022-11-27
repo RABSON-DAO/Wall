@@ -55,9 +55,9 @@ const { ethers } = require("ethers");
 
 /// 📡 What chain are your contracts deployed to?
 const cachedNetwork = window.localStorage.getItem("network");
-let targetNetwork = NETWORKS[cachedNetwork || "ethereum"]; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
+let targetNetwork = NETWORKS[cachedNetwork || "goerli"]; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
 if (!targetNetwork) {
-  targetNetwork = NETWORKS["ethereum"];
+  targetNetwork = NETWORKS["goerli"];
 }
 // 😬 Sorry for all the console logging
 const DEBUG = false;
@@ -529,9 +529,9 @@ function App(props) {
             // Required
             clientMeta: {
               description: "Forkable web wallet for small/quick transactions.",
-              url: "https://punkwallet.io",
-              icons: ["https://punkwallet.io/punk.png"],
-              name: "🧑‍🎤 PunkWallet.io",
+              url: "#",
+              icons: ["#"],
+              name: "🧑‍🎤 RabsonWallet.io",
             },
           } /*,
               {
