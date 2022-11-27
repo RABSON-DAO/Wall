@@ -107,7 +107,7 @@ export default function Ramp(props) {
               new RampInstantSDK({
                 hostAppName: "RabsonWallet",
                 //swapAmount: "100000000000000000", // 0.1 ETH in wei  ?
-                swapAsset: "USDT",
+                swapAsset: "ETH_USDT",
                 userAddress: props.address,
               })
                 .on("*", event => console.log(event))
