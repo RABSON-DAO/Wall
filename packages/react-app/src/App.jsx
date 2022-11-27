@@ -529,7 +529,7 @@ function App(props) {
             // Required
             clientMeta: {
               description: "Forkable web wallet for small/quick transactions.",
-              url: "#",
+              url: "https://rabsonwallet-hbl7x61r8-rabson-dao.vercel.app",
               icons: ["#"],
               name: "🧑‍🎤 RabsonWallet.io",
             },
@@ -1307,9 +1307,9 @@ function App(props) {
       )}
 
       <div style={{ zIndex: -1, padding: 64, opacity: 0.5, fontSize: 12 }}>
-        created with <span style={{ marginRight: 4 }}>🏗</span>
-        <a href="https://github.com/austintgriffith/scaffold-eth#-scaffold-eth" target="_blank">
-          scaffold-eth
+        created By <span style={{ marginRight: 4 }}>🏗</span>
+        <a href="">
+          Sif
         </a>
       </div>
       <div style={{ padding: 32 }} />

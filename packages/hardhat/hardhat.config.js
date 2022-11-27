@@ -34,7 +34,7 @@ function mnemonic() {
   return "";
 }
 
-module.exports = {
+module.exports = { 
   defaultNetwork,
 
   // don't forget to set your provider like:
