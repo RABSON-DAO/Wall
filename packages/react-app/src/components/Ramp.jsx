@@ -2,7 +2,6 @@ import { DollarCircleOutlined } from "@ant-design/icons";
 import { RampInstantSDK } from "@ramp-network/ramp-instant-sdk";
 import { Button, Divider, Modal } from "antd";
 import React, { useState } from "react";
-import {logo} from "../logo.svg";
 
 // added display of 0 if price={price} is not provided
 
@@ -106,8 +105,8 @@ export default function Ramp(props) {
             shape="round"
             onClick={() => {
               new RampInstantSDK({
-                hostAppName: "RabsonWallet",
-                hostLogoUrl: "../logo.svg",
+                hostAppName: "scaffold-eth",
+                hostLogoUrl: "https://scaffoldeth.io/scaffold-eth.png",
                 //swapAmount: "100000000000000000", // 0.1 ETH in wei  ?
                 swapAsset: "ETH_USDT",
                 userAddress: props.address,
