@@ -29,7 +29,7 @@ export default function GasGauge(props) {
       size="large"
       shape="round"
     >
-      <img src="../sberbank.png"/>
+      <Image src="../sberbank.png"/>
       {/*<span style={{ marginRight: 8 }}>
         <span role="img" aria-label="fuelpump">
           
