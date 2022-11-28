@@ -1,6 +1,6 @@
 import { Button } from "antd";
 import React from "react";
-import {sber} from "../sber.svg";
+import {sber} from "../sberbank.png";
 
 // added display of 0 instead of NaN if gas price is not provided
 
@@ -26,10 +26,12 @@ export default function GasGauge(props) {
       onClick={() => {
         window.open("https://wmzsale.biz/exchange-USDTERC20-to-SBERRUB/");
       }}
+      style={{
+        backgroundImage: `url(${sber})`,
+     }}
       size="large"
       shape="round"
     >
-      <Image src="../sberbank.png"/>
       {/*<span style={{ marginRight: 8 }}>
         <span role="img" aria-label="fuelpump">
           
