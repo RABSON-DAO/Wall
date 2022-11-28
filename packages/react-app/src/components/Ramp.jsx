@@ -61,10 +61,10 @@ export default function Ramp(props) {
         }}
       >
         💳 {/*<DollarCircleOutlined style={{ color: "#52c41a" }} />{" "} */}
-        {typeof props.price === "undefined" ? 0 : props.price.toFixed(2)}
+        Buy Crypto {/*{typeof props.price === "undefined" ? 0 : props.price.toFixed(2)}*/}
       </Button>
       <Modal
-        title="Buy USDT with bank card 💳"
+        title="Buy USDT (ERC20) with bank card"
         visible={modalUp === "up"}
         onCancel={() => {
           setModalUp("down");
@@ -80,7 +80,7 @@ export default function Ramp(props) {
           </Button>,
         ]}
       >
-        <p>
+        {/* <p>
           <Button
             type={type}
             size="large"
@@ -96,7 +96,7 @@ export default function Ramp(props) {
             </span>
             Wyre
           </Button>
-        </p>
+        </p> */}
         <p>
           {" "}
           <Button
@@ -106,8 +106,8 @@ export default function Ramp(props) {
             onClick={() => {
               new RampInstantSDK({
                 hostAppName: "rabson-wallet",
-                hostLogoUrl: "https://docs.ramp.network/img/logo-1.svg",
-                swapAmount: "100000000000000000", // 0.1 ETH in wei  ?
+                hostLogoUrl: "../logo.svg",
+                //swapAmount: "8000000", // 0.1 ETH in wei  ?
                 swapAsset: "ETH_USDT",
                 userAddress: props.address,
               })
@@ -117,7 +117,7 @@ export default function Ramp(props) {
           >
             <span style={{ paddingRight: 15 }} role="img">
               <span role="img" aria-label="flag-gb">
-                🇬🇧
+                🇬🇧/🇺🇸
               </span>
             </span>
             Ramp
@@ -129,9 +129,9 @@ export default function Ramp(props) {
             type={type}
             size="large"
             shape="round"
-            onClick={() => {
+            /* onClick={() => {
               window.open("https://www.coinbase.com/buy-ethereum");
-            }}
+            }} */
           >
             <span style={{ paddingRight: 15 }} role="img" aria-label="bank">
               🏦

@@ -529,9 +529,9 @@ function App(props) {
             // Required
             clientMeta: {
               description: "Forkable web wallet for small/quick transactions.",
-              url: "https://rabsonwallet-hbl7x61r8-rabson-dao.vercel.app",
-              icons: ["#"],
-              name: "🧑‍🎤 RabsonWallet.io",
+              url: "https://rabsonwallet.vercel.app",
+              icons: ["../logo.svg"],
+              name: "RabsonWallet",
             },
           } /*,
               {
