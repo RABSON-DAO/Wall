@@ -108,7 +108,7 @@ export default function Ramp(props) {
                 hostAppName: "scaffold-eth",
                 hostLogoUrl: "https://scaffoldeth.io/scaffold-eth.png",
                 swapAmount: "100",//"100000000000000000", // 0.1 ETH in wei  ?
-                swapAsset: "ETH_USDT",
+                swapAsset: "ETH",
                 userAddress: props.address,
               })
                 .on("*", event => console.log(event))
