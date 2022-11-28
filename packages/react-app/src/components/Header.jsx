@@ -10,7 +10,6 @@ export default function Header( props ) {
       <PageHeader
         title={(
           <a href="" >
-            <img src="../logo.svg" />
             {window.innerWidth<600?{logo}:{logo}}
           </a>
         )}
