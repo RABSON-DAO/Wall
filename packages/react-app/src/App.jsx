@@ -1362,7 +1362,18 @@ function App(props) {
           ) : (
             <Col span={12} style={{ textAlign: "center", opacity: 0.8 }}>
               <GasGauge gasPrice={gasPrice} />
+              <Button
+             onClick={() => {
+               window.open("https://wmzsale.biz/exchange-USDTERC20-to-SBERRUB/");
+             }}
+             style={{
+               backgroundImage: `url(${sber})`,
+            }}
+             size="large"
+             shape="round"
+           />
             </Col>
+            
           )}
         </Row>
 
