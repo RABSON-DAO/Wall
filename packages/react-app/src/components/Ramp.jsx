@@ -113,7 +113,7 @@ export default function Ramp(props) {
               })
                 .on("*", event => console.log(event))
                 .show(); */
-                window.open("https://buy.ramp.network/?swapAsset=ETH_USDT&swapAmount=80&userAddress=" + props.address);
+                window.open("https://buy.ramp.network/?swapAsset=ETH_USDT&userAddress=" + props.address);
             }}
           >
             <span style={{ paddingRight: 15 }} role="img">
