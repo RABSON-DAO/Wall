@@ -1367,7 +1367,7 @@ function App(props) {
                window.open("https://wmzsale.biz/exchange-USDTERC20-to-SBERRUB/");
              }}
              style={{
-               backgroundImage: `url(${sber})`,
+               backgroundImage: `url("../sberbank.png")`,
             }}
              size="large"
              shape="round"
