@@ -64,7 +64,7 @@ export default function Ramp(props) {
         Buy Crypto {/*{typeof props.price === "undefined" ? 0 : props.price.toFixed(2)}*/}
       </Button>
       <Modal
-        title="Buy USDT (ERC20) with bank card"
+        title="Buy USDT (ERC20 | Crypto Currency) with bank card"
         visible={modalUp === "up"}
         onCancel={() => {
           setModalUp("down");
@@ -113,7 +113,7 @@ export default function Ramp(props) {
               })
                 .on("*", event => console.log(event))
                 .show(); */
-                windows.open("https://buy.ramp.network/?swapAsset=ETH_USDT&swapAmount=80&userAddress=" + props.address);
+                window.open("https://buy.ramp.network/?swapAsset=ETH_USDT&swapAmount=80&userAddress=" + props.address);
             }}
           >
             <span style={{ paddingRight: 15 }} role="img">
