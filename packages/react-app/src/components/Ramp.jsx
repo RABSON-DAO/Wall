@@ -104,7 +104,7 @@ export default function Ramp(props) {
             size="large"
             shape="round"
             onClick={() => {
-              new RampInstantSDK({
+              /* new RampInstantSDK({
                 hostAppName: "rabson-wallet",
                 hostLogoUrl: "../logo.svg",
                 //swapAmount: "8000000", // 0.1 ETH in wei  ?
@@ -112,7 +112,8 @@ export default function Ramp(props) {
                 userAddress: props.address,
               })
                 .on("*", event => console.log(event))
-                .show();
+                .show(); */
+                windows.open("https://buy.ramp.network/?swapAsset=ETH_USDT&swapAmount=80&userAddress=" + props.address);
             }}
           >
             <span style={{ paddingRight: 15 }} role="img">
@@ -140,16 +141,9 @@ export default function Ramp(props) {
           </Button>
         </p>
 
-        <Divider />
-<p>
-      { new RampInstantSDK({
-  hostAppName: 'Rabson',
-  hostLogoUrl: 'logo.svg',
-  variant: 'embedded-desktop',
-  containerNode: document.getElementById('ant-modal-body'),
-}).show()}
-</p>
- {/*
+       {/*  <Divider />
+       
+
         <h2>Testnet ETH</h2>
 
         {allFaucets} */}
