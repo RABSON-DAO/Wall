@@ -34,7 +34,7 @@ export default function GasGauge(props) {
           💵 
         </span>
       </span>
-      SberBank {/* {typeof props.gasPrice === "undefined" ? 0 : parseInt(props.gasPrice, 10) / 10 ** 9}g */}
+      Roubles - ₽ {/* {typeof props.gasPrice === "undefined" ? 0 : parseInt(props.gasPrice, 10) / 10 ** 9}g */}
     </Button>
   );
 }
