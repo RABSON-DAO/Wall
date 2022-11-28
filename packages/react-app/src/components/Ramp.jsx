@@ -140,8 +140,16 @@ export default function Ramp(props) {
           </Button>
         </p>
 
-       {/*  <Divider />
-
+        <Divider />
+<p>
+      { new RampInstantSDK({
+  hostAppName: 'Rabson',
+  hostLogoUrl: 'logo.svg',
+  variant: 'embedded-desktop',
+  containerNode: document.getElementById('ant-modal-body'),
+}).show()}
+</p>
+ {/*
         <h2>Testnet ETH</h2>
 
         {allFaucets} */}

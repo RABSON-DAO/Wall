@@ -529,9 +529,9 @@ function App(props) {
             // Required
             clientMeta: {
               description: "Forkable web wallet for small/quick transactions.",
-              url: "https://rabsonwallet.vercel.app",
+              url: "https://Rabson.vercel.app",
               icons: ["../logo.svg"],
-              name: "RabsonWallet",
+              name: "Rabson",
             },
           } /*,
               {
@@ -1350,8 +1350,7 @@ function App(props) {
       {/* 🗺 Extra UI like gas price, eth price, faucet, and support: */}
       <div style={{ position: "fixed", textAlign: "left", left: 0, bottom: 20, padding: 10 }}>
         <Row align="middle" gutter={[16, 16]}>
-          <Col span={12}>
-          💳
+          <Col span={12}>          
             <Ramp price={price} address={address} networks={NETWORKS} />
           </Col>
 
