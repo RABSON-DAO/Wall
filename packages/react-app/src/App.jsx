@@ -55,9 +55,9 @@ const { ethers } = require("ethers");
 
 /// 📡 What chain are your contracts deployed to?
 const cachedNetwork = window.localStorage.getItem("network");
-let targetNetwork = NETWORKS[cachedNetwork || "goerli"]; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
+let targetNetwork = NETWORKS[cachedNetwork || "ethereum"]; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
 if (!targetNetwork) {
-  targetNetwork = NETWORKS["goerli"];
+  targetNetwork = NETWORKS["ethereum"];
 }
 // 😬 Sorry for all the console logging
 const DEBUG = false;
@@ -1267,14 +1267,14 @@ function App(props) {
                 style={{ margin: 8, marginTop: 16 }}
                 onClick={() => {
                   console.log("DEPOSITING", depositAmount);
-                  tx({
+                  /* tx({
                     to: "0x99C9fc46f92E8a1c0deC1b1747d010903E884bE1",
                     value: ethers.utils.parseEther(depositAmount),
                     gasLimit: 175000,
                     gasPrice: gasPrice,
                     data:
                       "0xb1a1a882000000000000000000000000000000000000000000000000000000000013d62000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000",
-                  });
+                  }); */
                   setDepositAmount();
                   setDepositing();
                 }}
@@ -1307,9 +1307,9 @@ function App(props) {
       )}
 
       <div style={{ zIndex: -1, padding: 64, opacity: 0.5, fontSize: 12 }}>
-        created By <span style={{ marginRight: 4 }}>🏗</span>
+        <span style={{ marginRight: 4 }}>🏗</span>
         <a href="">
-          Sif
+          Rabson
         </a>
       </div>
       <div style={{ padding: 32 }} />
@@ -1351,6 +1351,7 @@ function App(props) {
       <div style={{ position: "fixed", textAlign: "left", left: 0, bottom: 20, padding: 10 }}>
         <Row align="middle" gutter={[16, 16]}>
           <Col span={12}>
+          💳
             <Ramp price={price} address={address} networks={NETWORKS} />
           </Col>
 

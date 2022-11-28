@@ -60,11 +60,11 @@ export default function Ramp(props) {
           setModalUp("up");
         }}
       >
-        <DollarCircleOutlined style={{ color: "#52c41a" }} />{" "}
+        💳 {/*<DollarCircleOutlined style={{ color: "#52c41a" }} />{" "} */}
         {typeof props.price === "undefined" ? 0 : props.price.toFixed(2)}
       </Button>
       <Modal
-        title="Buy USDT"
+        title="Buy USDT with bank card 💳"
         visible={modalUp === "up"}
         onCancel={() => {
           setModalUp("down");
@@ -86,7 +86,7 @@ export default function Ramp(props) {
             size="large"
             shape="round"
             onClick={() => {
-              window.open("https://pay.sendwyre.com/purchase?destCurrency=USDT&sourceAmount=25&dest=" + props.address);
+              window.open("https://pay.sendwyre.com/purchase?destCurrency=USDT&sourceAmount=80&dest=" + props.address);
             }}
           >
             <span style={{ paddingRight: 15 }} role="img">
@@ -105,10 +105,10 @@ export default function Ramp(props) {
             shape="round"
             onClick={() => {
               new RampInstantSDK({
-                hostAppName: "scaffold-eth",
-                hostLogoUrl: "https://scaffoldeth.io/scaffold-eth.png",
+                hostAppName: "rabson-wallet",
+                hostLogoUrl: "https://docs.ramp.network/img/logo-1.svg",
                 swapAmount: "100000000000000000", // 0.1 ETH in wei  ?
-                swapAsset: "ETH",
+                swapAsset: "ETH_USDT",
                 userAddress: props.address,
               })
                 .on("*", event => console.log(event))
@@ -140,11 +140,11 @@ export default function Ramp(props) {
           </Button>
         </p>
 
-        <Divider />
+       {/*  <Divider />
 
         <h2>Testnet ETH</h2>
 
-        {allFaucets}
+        {allFaucets} */}
       </Modal>
     </div>
   );
