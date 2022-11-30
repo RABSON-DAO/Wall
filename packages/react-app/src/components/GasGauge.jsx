@@ -28,7 +28,7 @@ export default function GasGauge(props) {
       size="large"
       shape="round"
       background-color = "green"
-      style={{ background: "lime" }}
+      style={{ background: "green" }}
     >
       <span style={{ marginRight: 8 }}>
         <span role="img" aria-label="fuelpump">
