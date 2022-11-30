@@ -1260,12 +1260,12 @@ function App(props) {
         )}
       </div>
 
-      {/* {targetNetwork.name == "ethereum" ? (
+      {targetNetwork.name == "ethereum" ? (
         <div style={{ zIndex: -1, padding: 64, opacity: 0.5, fontSize: 12 }}>
           {depositing ? (
             <div style={{ width: 200, margin: "auto" }}>
               <EtherInput
-                /*price={price || targetNetwork.price}*
+                /*price={price || targetNetwork.price}*/
                 value={depositAmount}
                 token={targetNetwork.token || "ETH"}
                 // address={address}
@@ -1291,7 +1291,7 @@ function App(props) {
                   setDepositing();
                 }}
               >
-                <span style={{ marginRight: 8 }}>🔴</span>Buy me a coffee ☕
+                <span style={{ marginRight: 8 }}>🥰🤗</span>Buy me a coffee ☕
               </Button>
             </div>
           ) : (
@@ -1306,17 +1306,17 @@ function App(props) {
                   gasLimit: 175000,
                   gasPrice: gasPrice,
                   data: "0xb1a1a882000000000000000000000000000000000000000000000000000000000013d62000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000"
-                })*
+                })*/
                 }}
               >
-                <span style={{ marginRight: 8 }}>🔴</span>Buy me a coffee ☕
+                <span style={{ marginRight: 8 }}>🥰🤗</span>Buy me a coffee ☕
               </Button>
             </div>
           )}
         </div>
       ) : (
         ""
-      )} */}
+      )}
 
       <div style={{ zIndex: -1, padding: 64, opacity: 0.5, fontSize: 12 }}>
         <span style={{ marginRight: 4 }}>🏗</span>
