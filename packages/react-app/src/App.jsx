@@ -31,7 +31,6 @@ import WalletConnect from "@walletconnect/client";
 
 import { TransactionManager } from "./helpers/TransactionManager";
 import Logo from "./components/Logo";
-import Splash from "./components/Splash";
 
 const { confirm } = Modal;
 
@@ -906,14 +905,9 @@ function App(props) {
       </div>
 
       {/* ✏️ Edit the header and change the title to your project name */}
-      
-      {/* Main Central Image with info */}
-      <div style={{ padding: 16, cursor: "pointer", backgroundColor: "#FFFFFF", width: 420, margin: "auto" }}>
+      <div style={{ padding: 16, cursor: "pointer", backgroundColor: "#FFFFFF", width: 420, margin: "auto" }}>      
         <Splash />
       </div>
-          
-      
-
       <div 
         style={{ clear: "both", opacity: yourLocalBalance ? 1 : 0.2, width: 500, margin: "auto", position: "relative" }}
       >
