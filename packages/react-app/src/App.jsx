@@ -906,6 +906,11 @@ function App(props) {
 
       {/* ✏️ Edit the header and change the title to your project name */}
 
+      {/* info splash */}
+      <div style={{ padding: 16, cursor: "pointer", backgroundColor: "#FFFFFF", width: 420, margin: "auto" }}>      
+        <Splash />
+      </div>
+      
       <div 
         style={{ clear: "both", opacity: yourLocalBalance ? 1 : 0.2, width: 500, margin: "auto", position: "relative" }}
       >
@@ -915,10 +920,7 @@ function App(props) {
           {faucetHint}
         </span>
       </div>
-      {/* info splash */}
-      <div style={{ padding: 16, cursor: "pointer", backgroundColor: "#FFFFFF", width: 420, margin: "auto" }}>      
-        <Splash />
-      </div>
+      
 
       {address && (
         <div style={{ padding: 16, cursor: "pointer", backgroundColor: "#FFFFFF", width: 420, margin: "auto" }}>
