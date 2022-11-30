@@ -30,7 +30,7 @@ import { useBalance, useExchangePrice, useGasPrice, useLocalStorage, usePoller, 
 import WalletConnect from "@walletconnect/client";
 
 import { TransactionManager } from "./helpers/TransactionManager";
-import Logo from "./components/Logo";
+import Splash from "./components/Splash";
 
 const { confirm } = Modal;
 
