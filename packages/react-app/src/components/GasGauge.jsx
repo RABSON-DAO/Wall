@@ -31,10 +31,10 @@ export default function GasGauge(props) {
       <span style={{ marginRight: 8 }}>
         <span role="img" aria-label="fuelpump">
           {/* ⛽️ */}
-          💵 
+          💸
         </span>
       </span>
-      Roubles - ₽ {/* {typeof props.gasPrice === "undefined" ? 0 : parseInt(props.gasPrice, 10) / 10 ** 9}g */}
+      Crypto | ₽ --Exchange {/* {typeof props.gasPrice === "undefined" ? 0 : parseInt(props.gasPrice, 10) / 10 ** 9}g */}
     </Button>
   );
 }

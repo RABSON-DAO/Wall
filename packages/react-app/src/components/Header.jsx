@@ -1,6 +1,5 @@
 import { PageHeader } from "antd";
 import React from "react";
-import Logo from "./Logo"; 
 
 // displays a page header
 
@@ -11,8 +10,7 @@ export default function Header( props ) {
       <PageHeader
         title={(
           <a href="" >
-            {window.innerWidth<600? "":""}
-            {/* "🏗":"🏗 Rabson"} */}
+            {window.innerWidth<600?"💵 Crypto / ₽ | Exchange":"💵 Crypto / ₽ | Exchange"}
           </a>
         )}
         /* subTitle=<a href="https://github.com/scaffold-eth/punk-wallet">
