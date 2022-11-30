@@ -80,7 +80,7 @@ export default function Ramp(props) {
           </Button>,
         ]}
       >
-        <div id="ramp-container">
+        <div id="ramp-container">  
         {/* <p>
           <Button
             type={type}

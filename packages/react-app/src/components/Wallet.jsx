@@ -444,7 +444,7 @@ export default function Wallet(props) {
                 Never share your private key with anyone!!!⚠️</p>
           </div>
         }
-        onOk={() => {
+        onOk={() => { 
           setOpen(!open);
         }}
         onCancel={() => {

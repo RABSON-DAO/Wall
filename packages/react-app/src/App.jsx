@@ -905,7 +905,7 @@ function App(props) {
 
       {/* ✏️ Edit the header and change the title to your project name */}
 
-      <div
+      <div 
         style={{ clear: "both", opacity: yourLocalBalance ? 1 : 0.2, width: 500, margin: "auto", position: "relative" }}
       >
         <Balance value={yourLocalBalance} size={12 + window.innerWidth / 16} price={price} />
