@@ -59,6 +59,7 @@ export default function Ramp(props) {
         onClick={() => {
           setModalUp("up");
         }}
+        style={{ background: "orange"}}
       >
         💳 {/*<DollarCircleOutlined style={{ color: "#52c41a" }} />{" "} */}
         Buy Crypto {/*{typeof props.price === "undefined" ? 0 : props.price.toFixed(2)}*/}
