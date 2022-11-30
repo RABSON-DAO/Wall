@@ -31,6 +31,7 @@ import WalletConnect from "@walletconnect/client";
 
 import { TransactionManager } from "./helpers/TransactionManager";
 import Splash from "./components/Splash";
+import Logo from "./components/Logo";
 
 const { confirm } = Modal;
 
@@ -851,7 +852,7 @@ function App(props) {
     <div className="App">
       {/* Popup at launch if app */}
       {/* <Wallet key="wallet" address={address} provider={userProvider} ensProvider={mainnetProvider} price={price} /> */}
-      
+      <Logo />
       <div className="site-page-header-ghost-wrapper">
         <Header
         
