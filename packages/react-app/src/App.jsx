@@ -855,7 +855,6 @@ function App(props) {
         <Header
         
           extra={[
-            <Logo />,
             <Address
               key="address"
               fontSize={32}

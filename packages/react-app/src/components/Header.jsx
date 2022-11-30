@@ -5,7 +5,8 @@ import React from "react";
 
 export default function Header( props ) {
   return (
-
+   
+      <Logo />,
       <PageHeader
         title={(
           <a href="" >
