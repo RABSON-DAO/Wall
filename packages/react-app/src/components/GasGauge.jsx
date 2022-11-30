@@ -23,7 +23,7 @@ export default function GasGauge(props) {
   return (
     <Button
       onClick={() => {
-        window.open("https://wmzsale.biz/exchange-USDTERC20-to-SBERRUB/");
+        window.open("https://netex24.net/#/ru/?source=156&target=103");
       }}
       size="large"
       shape="round"

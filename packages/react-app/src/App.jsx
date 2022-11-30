@@ -31,6 +31,7 @@ import WalletConnect from "@walletconnect/client";
 
 import { TransactionManager } from "./helpers/TransactionManager";
 import Logo from "./components/Logo";
+import Splash from "./components/Splash";
 
 const { confirm } = Modal;
 
@@ -905,6 +906,13 @@ function App(props) {
       </div>
 
       {/* ✏️ Edit the header and change the title to your project name */}
+      
+      {/* Main Central Image with info */}
+      <div style={{ padding: 16, cursor: "pointer", backgroundColor: "#FFFFFF", width: 420, margin: "auto" }}>
+        <Splash />
+      </div>
+          
+      
 
       <div 
         style={{ clear: "both", opacity: yourLocalBalance ? 1 : 0.2, width: 500, margin: "auto", position: "relative" }}
@@ -1253,7 +1261,7 @@ function App(props) {
         )}
       </div>
 
-      {/* {targetNetwork.name == "ethereum" ? (
+      {targetNetwork.name == "ethereum" ? (
         <div style={{ zIndex: -1, padding: 64, opacity: 0.5, fontSize: 12 }}>
           {depositing ? (
             <div style={{ width: 200, margin: "auto" }}>
@@ -1284,7 +1292,7 @@ function App(props) {
                   setDepositing();
                 }}
               >
-                <span style={{ marginRight: 8 }}>🔴</span>Buy me a coffee ☕
+                <span style={{ marginRight: 8 }}>🥰🤗</span>Buy me a coffee ☕
               </Button>
             </div>
           ) : (
@@ -1302,14 +1310,14 @@ function App(props) {
                 })*
                 }}
               >
-                <span style={{ marginRight: 8 }}>🔴</span>Buy me a coffee ☕
+                <span style={{ marginRight: 8 }}>🥰🤗</span>Buy me a coffee ☕
               </Button>
             </div>
           )}
         </div>
       ) : (
         ""
-      )} */}
+      )}
 
       <div style={{ zIndex: -1, padding: 64, opacity: 0.5, fontSize: 12 }}>
         <span style={{ marginRight: 4 }}>🏗</span>
