@@ -916,7 +916,7 @@ function App(props) {
       >
         <Balance value={yourLocalBalance} size={12 + window.innerWidth / 16} price={price} />
         <span style={{ verticalAlign: "middle" }}>
-          {networkSelect}
+          {/* {networkSelect} */}
           {faucetHint}
         </span>
       </div>
