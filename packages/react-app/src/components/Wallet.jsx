@@ -439,9 +439,9 @@ export default function Wallet(props) {
             {selectedAddress ? <Address address={selectedAddress} ensProvider={props.ensProvider} /> : <Spin />}
             <div style={{ float: "right", paddingRight: 25 }}>
               <Balance address={selectedAddress} provider={props.provider} dollarMultiplier={props.price} />
-              <p>⚠️ Backup your Wallet by <b>Copying and Storing</b> your <b>Private Key</b> in a safe place. If you lose it you will be locked out of your wallet!
-                Never share your private key with anyone!!!⚠️</p>
             </div>
+            <p>⚠️ Backup your Wallet by <b>Copying and Storing</b> your <b>Private Key</b> in a safe place. If you lose it you will be locked out of your wallet!
+                Never share your private key with anyone!!!⚠️</p>
           </div>
         }
         onOk={() => {
