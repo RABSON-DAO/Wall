@@ -124,12 +124,12 @@ export default function Ramp(props) {
             </span>
             Ramp
           </Button>
-          {new RampInstantSDK({
+          {/* {new RampInstantSDK({
   hostAppName: 'Your App',
   hostLogoUrl: 'https://rampnetwork.github.io/assets/misc/test-logo.png',
   variant: 'embedded-desktop',
   containerNode: document.getElementById('ramp-container'),
-}).show()}
+}).show()} */}
         </p>
 
         <p>
