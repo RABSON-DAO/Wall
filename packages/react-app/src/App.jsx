@@ -910,7 +910,7 @@ function App(props) {
       <div style={{ padding: 16, cursor: "pointer", backgroundColor: "#FFFFFF", width: 420, margin: "auto" }}>      
         <Splash />
       </div>
-      
+      <div>Your Crypto Wallet Balance:</div>
       <div 
         style={{ clear: "both", opacity: yourLocalBalance ? 1 : 0.2, width: 500, margin: "auto", position: "relative" }}
       >
