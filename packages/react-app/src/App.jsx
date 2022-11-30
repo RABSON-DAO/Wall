@@ -850,7 +850,8 @@ function App(props) {
   return (
     <div className="App">
       {/* Popup at launch if app */}
-      <Wallet key="wallet" address={address} provider={userProvider} ensProvider={mainnetProvider} price={price} />
+      {/* <Wallet key="wallet" address={address} provider={userProvider} ensProvider={mainnetProvider} price={price} /> */}
+      <Logo />
       <div className="site-page-header-ghost-wrapper">
         <Header
         
