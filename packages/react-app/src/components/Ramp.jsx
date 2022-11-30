@@ -80,6 +80,7 @@ export default function Ramp(props) {
           </Button>,
         ]}
       >
+        <div id="ramp-container">
         {/* <p>
           <Button
             type={type}
@@ -146,7 +147,7 @@ export default function Ramp(props) {
             Coinbase
           </Button>
         </p>
-
+      </div>
        {/*  <Divider />
        
 
