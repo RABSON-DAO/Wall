@@ -30,6 +30,7 @@ import { useBalance, useExchangePrice, useGasPrice, useLocalStorage, usePoller, 
 import WalletConnect from "@walletconnect/client";
 
 import { TransactionManager } from "./helpers/TransactionManager";
+import Logo from "./components/Logo";
 
 const { confirm } = Modal;
 
@@ -528,9 +529,9 @@ function App(props) {
             uri: walletConnectUrl,
             // Required
             clientMeta: {
-              description: "Forkable web wallet for small/quick transactions.",
+              description: "Web wallet for small/quick transactions.",
               url: "https://rabsonwallet.vercel.app",
-              icons: ["../logo.svg"],
+              icons: ["logo.svg"],
               name: "RabsonWallet",
             },
           } /*,
@@ -761,7 +762,7 @@ function App(props) {
           onClick={() => {
             faucetTx({
               to: address,
-              value: parseEther("0.01"),
+              value: parseEther("0.09"),
             });
             setFaucetClicked(true);
           }}
@@ -848,9 +849,13 @@ function App(props) {
 
   return (
     <div className="App">
+      {/* Popup at launch if app */}
+      <Wallet key="wallet" address={address} provider={userProvider} ensProvider={mainnetProvider} price={price} />
       <div className="site-page-header-ghost-wrapper">
         <Header
+        
           extra={[
+            <Logo />,
             <Address
               key="address"
               fontSize={32}
