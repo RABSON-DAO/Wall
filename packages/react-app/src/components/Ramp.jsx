@@ -65,7 +65,7 @@ export default function Ramp(props) {
         Купить Крипто {/*{typeof props.price === "undefined" ? 0 : props.price.toFixed(2)}*/}
       </Button>
       <Modal
-        title="Buy USDT (ERC20 | Crypto Currency) with bank card"
+        title="Купить USDT (ERC20 | Криптовалюта) с помощью международной банковской карты."
         visible={modalUp === "up"}
         onCancel={() => {
           setModalUp("down");
