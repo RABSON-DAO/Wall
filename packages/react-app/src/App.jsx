@@ -923,8 +923,8 @@ function App(props) {
       </div>
       {walletDisplay}
       
-
-      {/* {address && (
+      Адрес вашего крипто-кошелька
+      {address} {/* && (
         <div style={{ padding: 16, cursor: "pointer", backgroundColor: "#FFFFFF", width: 420, margin: "auto" }}>
           <QRPunkBlockie withQr address={address} showAddress={true} />
         </div>
