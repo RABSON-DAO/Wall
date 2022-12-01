@@ -54,7 +54,7 @@ const useUserProvider = (injectedProvider, localProvider) =>
       }
     }
 
-    console.log("🔥 Using burner provider", burnerConfig);
+    //console.log("🔥 Using burner provider", burnerConfig);
     if (localProvider.connection && localProvider.connection.url) {
       burnerConfig.rpcUrl = localProvider.connection.url;
       return new Web3Provider(new BurnerProvider(burnerConfig));

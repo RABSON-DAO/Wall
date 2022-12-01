@@ -62,6 +62,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.8.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "scrypt": "github:barrysteyn/node-scrypt#fb60a8d3c158fe115a624b5ffa7480f3a24b03fb"
   }
 }
