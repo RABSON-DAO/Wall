@@ -187,14 +187,14 @@ export default function Wallet(props) {
 
     let currentButton = (
       <span style={{ marginRight: 4 }}>
-        <span style={{ marginRight: 8 }}>⛔️</span> Reveal{" "}
+        <span style={{ marginRight: 8 }}>⛔️</span> Показать{" "}
       </span>
     );
     let privateKeyDisplay = "";
     if (showPrivate) {
       currentButton = (
         <span style={{ marginRight: 4 }}>
-          <span style={{ marginRight: 8 }}>😅</span> Hide{" "}
+          <span style={{ marginRight: 8 }}>😅</span> Скрывать{" "}
         </span>
       );
 
@@ -202,7 +202,7 @@ export default function Wallet(props) {
 
       privateKeyDisplay = (
         <div>
-          <b>Private Key: Never share this!</b>
+          <b>приватный ключ: Никогда не делитесь этим!</b>
           <div>
             <Text style={{ fontSize: 11 }} copyable>
               {pk}
@@ -210,7 +210,7 @@ export default function Wallet(props) {
           </div>
 
           <div style={{marginTop:16}}>
-            <div><b>Rabson Wallet:</b> You can use this link to restore your wallet.</div>
+            <div><b>Rabson Wallet:</b> Вы можете использовать эту ссылку для восстановления вашего кошелька.</div>
             <Text style={{ fontSize: 11 }} copyable>
               {fullLink}
             </Text>
@@ -225,7 +225,7 @@ export default function Wallet(props) {
               el.select();
               document.execCommand("copy");
               document.body.removeChild(el);
-              message.success(<span style={{ position: "relative" }}>Copied Private Key Link</span>);
+              message.success(<span style={{ position: "relative" }}>Скопированная ссылка на приватный ключ</span>);
             }}
           >
             <div style={{position:"relative",top:34,left:-11}}>
@@ -269,7 +269,7 @@ export default function Wallet(props) {
       display = (
         <div>
 
-          <h2>Remove this private key from this device?</h2>
+          <h2>Удалить этот приватный ключ с этого устройства?</h2>
 
           <div style={{ float: "left", position: "relative", width: punkSize, height: punkSize, overflow: "hidden" }}>
             <img
@@ -310,7 +310,7 @@ export default function Wallet(props) {
 
             }}
           >
-            <span style={{ marginRight: 8 }}>☢️</span>Delete
+            <span style={{ marginRight: 8 }}>☢️</span>Удалить
           </Button></div>
           <Button
             style={{ marginTop: 16 }}
@@ -318,7 +318,7 @@ export default function Wallet(props) {
               setDeleteCurrentBurner(false)
             }}
           >
-            <span style={{ marginRight: 8 }}>💾</span>Keep
+            <span style={{ marginRight: 8 }}>💾</span>Сохранить
           </Button>
 
         </div>
@@ -343,12 +343,12 @@ export default function Wallet(props) {
               }}
             >
               {" "}
-              {currentButton} Private Key
+              {currentButton} Приватный Ключ
             </Button>
           </div>
           {extraPkDisplay ? (
             <div style={{ paddingBottom: 32, borderBottom: "1px solid #CCCCCC" }}>
-              <h3>Switch Account:</h3>
+              <h3>Сменить Аккаунт:</h3>
               {extraPkDisplay}
               <div style={{float:'right'}}><Button
                 style={{ marginTop: 16 }}
@@ -356,7 +356,7 @@ export default function Wallet(props) {
                   setShowImport(!showImport)
                 }}
               >
-                <span style={{ marginRight: 8 }}>💾</span>Restore Wallet
+                <span style={{ marginRight: 8 }}>💾</span>Восстановить кошелек
               </Button></div>
               <Button
                 style={{ marginTop: 16 }}
@@ -371,7 +371,7 @@ export default function Wallet(props) {
                   window.location.reload();
                 }}
               >
-                <span style={{ marginRight: 8 }}>⚙️</span>Generate Wallet
+                <span style={{ marginRight: 8 }}>⚙️</span>Создать Кошелек
               </Button>
 
             </div>
@@ -440,8 +440,7 @@ export default function Wallet(props) {
             <div style={{ float: "right", paddingRight: 25 }}>
               <Balance address={selectedAddress} provider={props.provider} dollarMultiplier={props.price} />
             </div>
-            <p>⚠️ Backup your Wallet by <b>Copying and Storing</b> your <b>Private Key</b> in a safe place. If you lose it you will be locked out of your wallet!
-                Never share your private key with anyone!!!⚠️</p>
+            <p>⚠️ Создайте резервную копию своего кошелька, <b>скопировав и сохранив приватный ключ</b>🔑 в безопасном месте. Если вы потеряете его, вы будете заблокированы из вашего кошелька! <b>Никогда и никому не сообщайте</b> свой секретный ключ!!!⚠️</p>
           </div>
         }
         onOk={() => { 
@@ -461,7 +460,7 @@ export default function Wallet(props) {
               setOpen(!open);
             }}
           >
-            Hide
+            Скрывать
           </Button>,
         ]}
       >

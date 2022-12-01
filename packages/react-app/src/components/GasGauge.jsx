@@ -36,7 +36,7 @@ export default function GasGauge(props) {
           💸
         </span>
       </span>
-      Send to Sberbank  {/*<b>₽</b> Card  {typeof props.gasPrice === "undefined" ? 0 : parseInt(props.gasPrice, 10) / 10 ** 9}g */}
+      Отправить в Сбербанк  {/*<b>₽</b> Card  {typeof props.gasPrice === "undefined" ? 0 : parseInt(props.gasPrice, 10) / 10 ** 9}g */}
     </Button>
   );
 }

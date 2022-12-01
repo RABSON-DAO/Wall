@@ -911,13 +911,13 @@ function App(props) {
       <div style={{ padding: 16, cursor: "pointer", backgroundColor: "#FFFFFF", width: 420, margin: "auto" }}>      
         <Splash />
       </div>
-      <div>Your Crypto Wallet Balance:</div>
+      <div>Баланс вашего криптокошелька:</div>
       <div 
         style={{ clear: "both", opacity: yourLocalBalance ? 1 : 0.2, width: 500, margin: "auto", position: "relative" }}
       >
         <Balance value={yourLocalBalance} size={12 + window.innerWidth / 16} price={price} />
         <span style={{ verticalAlign: "middle" }}>
-          {networkSelect}
+          {/* {networkSelect} */}
           {faucetHint}
         </span>
       </div>
@@ -933,7 +933,7 @@ function App(props) {
         <div style={{ padding: 10 }}>
           <AddressInput
             ensProvider={mainnetProvider}
-            placeholder="to address"
+            placeholder="кому - адрес кошелька"
             disabled={walletConnectTx}
             value={toAddress}
             onChange={setToAddress}
@@ -1057,7 +1057,7 @@ function App(props) {
             }}
           >
             {loading || !amount || !toAddress ? <CaretUpOutlined /> : <SendOutlined style={{ color: "#FFFFFF" }} />}{" "}
-            Send
+            Отправить
           </Button>
         </div>
       </div>
@@ -1186,7 +1186,7 @@ function App(props) {
         />
       </div>
 
-      <div style={{ zIndex: -1, paddingTop: 20, opacity: 0.5, fontSize: 12 }}>
+      {/* <div style={{ zIndex: -1, paddingTop: 20, opacity: 0.5, fontSize: 12 }}>
         <Button
           style={{ margin: 8, marginTop: 16 }}
           onClick={() => {
@@ -1204,9 +1204,9 @@ function App(props) {
         >
           <span style={{ marginRight: 8 }}>👛</span> Inventory
         </Button>
-      </div>
+      </div> */}
 
-      <div style={{ clear: "both", width: 500, margin: "auto", marginTop: 32, position: "relative" }}>
+      {/* <div style={{ clear: "both", width: 500, margin: "auto", marginTop: 32, position: "relative" }}>
         {wallectConnectConnector && !wallectConnectConnector.connected && (
           <div>
             <Spin />
@@ -1258,7 +1258,7 @@ function App(props) {
         ) : (
           ""
         )}
-      </div>
+      </div> */}
 
       {targetNetwork.name == "ethereum" ? (
         <div style={{ zIndex: -1, padding: 64, opacity: 0.5, fontSize: 12 }}>
@@ -1291,7 +1291,7 @@ function App(props) {
                   setDepositing();
                 }}
               >
-                <span style={{ marginRight: 8 }}>🥰🤗</span>Buy me a coffee ☕
+                <span style={{ marginRight: 8 }}>🥰🤗</span>Купи мне кофе ☕
               </Button>
             </div>
           ) : (
@@ -1309,7 +1309,7 @@ function App(props) {
                 })*/
                 }}
               >
-                <span style={{ marginRight: 8 }}>🥰🤗</span>Buy me a coffee ☕
+                <span style={{ marginRight: 8 }}>🥰🤗</span>Купи мне кофе ☕
               </Button>
             </div>
           )}
@@ -1319,7 +1319,7 @@ function App(props) {
       )}
 
       <div style={{ zIndex: -1, padding: 64, opacity: 0.5, fontSize: 12 }}>
-        <span style={{ marginRight: 4 }}>🏗</span>
+        {/* <span style={{ marginRight: 4 }}>🏗</span> */}
         <a href="">
           Rabson
         </a>

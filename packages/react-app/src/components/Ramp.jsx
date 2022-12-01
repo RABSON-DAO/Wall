@@ -62,7 +62,7 @@ export default function Ramp(props) {
         style={{ background: "orange"}}
       >
         💳 {/*<DollarCircleOutlined style={{ color: "#52c41a" }} />{" "} */}
-        Buy Crypto {/*{typeof props.price === "undefined" ? 0 : props.price.toFixed(2)}*/}
+        Купить Крипто {/*{typeof props.price === "undefined" ? 0 : props.price.toFixed(2)}*/}
       </Button>
       <Modal
         title="Buy USDT (ERC20 | Crypto Currency) with bank card"
@@ -77,7 +77,7 @@ export default function Ramp(props) {
               setModalUp("down");
             }}
           >
-            cancel
+            отмена
           </Button>,
         ]}
       >

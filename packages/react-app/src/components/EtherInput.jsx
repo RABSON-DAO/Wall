@@ -128,7 +128,7 @@ export default function EtherInput(props) {
         max
       </span>
       <Input
-        placeholder={props.placeholder ? props.placeholder : "amount in " + mode}
+        placeholder={props.placeholder ? props.placeholder : "сумма в " + mode}
         autoFocus={props.autoFocus}
         prefix={prefix}
         value={display}
