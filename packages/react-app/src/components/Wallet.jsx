@@ -371,7 +371,7 @@ export default function Wallet(props) {
                   window.location.reload();
                 }}
               >
-                <span style={{ marginRight: 8 }}>⚙️</span>Generate
+                <span style={{ marginRight: 8 }}>⚙️</span>Generate Wallet
               </Button>
 
             </div>

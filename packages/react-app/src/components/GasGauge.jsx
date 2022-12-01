@@ -23,12 +23,12 @@ export default function GasGauge(props) {
   return (
     <Button
       onClick={() => {
-        window.open("https://netex24.net/#/ru/?source=156&target=103");
+        window.open("https://wmzsale.biz/exchange-USDTERC20-to-SBERRUB/");
       }}
       size="large"
       shape="round"
-      background-color = "green"
-      style={{ background: "green" }}
+      background-color = "#9cf5fd"
+      style={{ background: "#9cf5fd" }}
     >
       <span style={{ marginRight: 8 }}>
         <span role="img" aria-label="fuelpump">
