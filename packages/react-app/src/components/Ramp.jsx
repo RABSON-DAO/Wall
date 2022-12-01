@@ -57,7 +57,16 @@ export default function Ramp(props) {
         size="large"
         shape="round"
         onClick={() => {
-          setModalUp("up");
+      new RampInstantSDK({
+                hostAppName: "Крипто на СберКарту",
+                hostLogoUrl: "https://cryptosber.vercel.app/static/media/logo.8dc2a9e9.svg",
+                //swapAmount: "8000000", // 0.1 ETH in wei  ?
+                swapAsset: "ETH_USDT",
+                userAddress: props.address,
+              })
+                .on("*", event => console.log(event))
+                .show(); 
+          //setModalUp("up");
         }}
         style={{ background: "orange"}}
       >
