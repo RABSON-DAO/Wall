@@ -921,10 +921,11 @@ function App(props) {
           {faucetHint}
         </span>
       </div>
+      {walletDisplay}
+      <br />
       {address}
       
-      <br />
-      {walletDisplay}
+      
       {/*
       Адрес вашего крипто-кошелька<br />
        && (
