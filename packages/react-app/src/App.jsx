@@ -922,8 +922,10 @@ function App(props) {
         </span>
       </div>
       {address}
-      {/*{walletDisplay}
+      
       <br />
+      {walletDisplay}
+      {/*
       Адрес вашего крипто-кошелька<br />
        && (
         <div style={{ padding: 16, cursor: "pointer", backgroundColor: "#FFFFFF", width: 420, margin: "auto" }}>
