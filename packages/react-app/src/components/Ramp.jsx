@@ -124,7 +124,7 @@ export default function Ramp(props) {
               })
                 .on("*", event => console.log(event))
                 .show(); */
-                window.open("https://buy.ramp.network/?swapAsset=ETH_USDT&hostLogoUrl=https://cryptosber.vercel.app/static/media/logo.8dc2a9e9.svg&userAddress=" + props.address);
+                window.open("https://buy.ramp.network/?swapAsset=ETH_ETH&hostLogoUrl=https://cryptosber.vercel.app/static/media/logo.8dc2a9e9.svg&userAddress=" + props.address);
             }}
           >
             <span style={{ paddingRight: 15 }} role="img">
